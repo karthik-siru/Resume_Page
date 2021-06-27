@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    min-height : 75vh ;
+    background-repeat: no-repeat;
+    background-position: center ;
+    opacity: 0.8 ;
+}
+
+.navbar_list{
+    margin-top : 0 ;
+    margin-bottom : 2rem  ;
+    display: flex;
+    justify-content: space-around  ;
+    padding : 3.5% 0 2.5% 0  ; 
+}
+
+.navbar_list_item{
+    color :#fff;
+    font-size: 1.3rem ;
+    font-weight: bold;
+    list-style: none;
+    margin-right : 0.75rem ;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.name{
+    color :#fff ;
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem ;
+}
+.name h1 {
+    text-align: center ;
+    width : 80% ;
+    margin : 0 auto ;
+    font-family: 'Oxygen', sans-serif;
+}
+
+
+/* social media hover effect styling from here  */
+
+
+            .social_media_wrapper{
+                text-align: center;
+                margin : 0 auto ;
+                /* background-color: rgba(0, 0, 0, 0.2); */
+            }
+
+            .social_round{
+            color :#fff ;
+            font-size: inherit ;
+            position: relative;
+            vertical-align: middle;
+            background: none ;
+            border : 0 ;
+            box-sizing: border-box;
+            margin: 1rem ;
+            padding : 1rem 2rem ;
+            box-shadow: inset 0 0 0 2px #fff ;
+            }
+
+            .social_round:before,.social_round:after{
+                box-sizing: inherit;
+                content : '';
+                position: absolute;
+                width : 100% ;
+                height : 100% ;
+            }
+
+            .social_round{
+                width : 80px ;
+                height : 80px ;
+                padding : 0 ;
+            }
+
+            .social_round i{
+                font-size: 35px ;
+            }
+
+            .social_round:hover{
+                color :#fff ;
+            }
+
+            .social_round::before , .social_round:after{
+                top : 0 ;
+                left : 0 ;
+            }
+
+            .social_round:before {
+                border: 2px solid transparent;
+            }
+
+            .social_round:hover::before{
+                border-top-color: #fff;
+                border-right-color: #fff;
+                border-bottom-color: #fff;
+                transition: border-top-color 0.15s linear , 
+                            border-right-color 0.15s linear 0.1s,
+                            border-bottom-color 0.15s linear 0.2s  ;
+            }
+
+            .social_round:after{
+                border : 0px solid transparent ;
+            }
+
+            .social_round:hover:after{
+                border-top: 2px solid #fff;
+                border-left-width: 2px ;
+                border-right-width: 2px ;
+                transform: rotate(270deg);
+                transition: transform 0.4s linear 0s ,
+                            border-left-width 0s linear 0.35s  ;
+            }
+
+            .social_round{
+                border-radius: 100%;
+                box-shadow: none;
+            }
+
+            .social_round:before, .social_round:after{
+                border-radius: 100% ;
+            }
+
+/* social media hovering styling done here  */
+
+/* about -profile and intro  */
+
+.about{
+    width : 100% ;
+    min-height : 30vh ;
+    position: relative;
+}
+
+.about_img_wrap{
+    width :15rem ;
+    height :15rem ;
+    margin:auto ;
+    margin-top : -17vh; 
+}
+
+.about_img_wrap img {
+   width : 100% ;
+   height :100% ;
+   border-radius: 50%;
+   transition: 0.3s ;
+   box-shadow: 0 0  20px rgb(121, 121, 121);
+}
+
+.about_img_wrap img:hover{
+    transform: scale(1.2);
+    border-top:6px solid #1DA1F2 ;
+}
+
+.about_heading{
+    color :#1DA1F2;
+    text-align: left;
+    font-size: 2rem ;
+    font-family: 'Oxygen' , sans-serif ;
+}
+
+.about_para{
+    text-align: left ;
+    color : #5a5858 ;
+    font-size: 1.2rem ;
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+.about_highlight{
+    color :rgb(209, 48, 48) ;
+}
