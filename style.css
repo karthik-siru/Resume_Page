@@ -233,6 +233,86 @@ section:nth-child(2n+1) {
     height : 100% ;
 }
 
+
+/* timeline and aeroplane effect */
+
+/* general properties  */
+
+.timeline_box:nth-child(2n){
+    left :53% ;
+    text-align: left;
+}
+
+.timeline_wrap{
+    position: relative;
+    width : 75% ;
+    margin: 0 auto;
+}
+
+.timeline_box{
+    position: relative;
+    text-align: right ;
+    left :5%;
+    margin :.4rem ;
+    min-height :7rem ;
+    width : 40% ;
+}
+.timeline_box:nth-child(2n+1)::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: -12.8%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: grey;
+    z-index: 1;
+
+}
+
+.timeline_box:nth-child(2n)::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -9.4%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: grey;
+    z-index: 1;
+}
+
+.timeline_divider {
+    position: absolute;
+    height: 80%;
+    width: 0;
+    border: 3px dashed #0096fa6b;
+    top: 8%;
+    left: 50%;
+}
+
+.timeline_plane {
+    position: sticky;
+    top : 30% ;
+    transform: rotate(45deg) translate(0,40%);
+    z-index: 2;
+}
+
+.work_title{
+    font-family: 'Oxygen',sans-serif;
+    color :mediumseagreen;
+    padding-right: 1rem ;
+}
+.work_duration{
+    font-style:italic ;
+    color :maroon;
+    font-family: 'Oxygen',sans-serif;
+    padding-right :0.8rem ;
+}
+.work_description{
+    font-family: 'Oxygen',sans-serif;
+}
+
 /* footer and contact info  */
 
 footer{
