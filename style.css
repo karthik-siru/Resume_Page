@@ -160,14 +160,32 @@ body{
     border-top:6px solid #1DA1F2 ;
 }
 
-.about_heading{
+.heading_wrap{
+    width : 20% ;
+    margin: 0 auto ;
+}
+
+.section_heading{
     color :#1DA1F2;
-    text-align: left;
+    text-align: center ;
     font-size: 2rem ;
     font-family: 'Oxygen' , sans-serif ;
+    transition: 0.5s;
+}
+
+.section_heading:hover{
+    color :crimson;
+}
+.contact{
+    color :rgba(255 , 255, 255, 0.8);
+}
+.contact:hover{
+    color :white;
 }
 
 .about_para{
+    width : 70% ;
+    margin :0 auto ;
     text-align: left ;
     color : #5a5858 ;
     font-size: 1.2rem ;
@@ -177,4 +195,76 @@ body{
 
 .about_highlight{
     color :rgb(209, 48, 48) ;
+}
+
+/* section -background color  */
+section:nth-child(2n) {
+    background-color: beige;
+}
+section:nth-child(2n+1) {
+    background-color: white;
+}
+
+/* skills */
+
+.skills_display{
+    width :50% ;
+    min-height :20vh ;
+    margin: 0 auto 2% auto ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.skill_wrap{
+    width: 7rem;
+    height: 1.5rem;
+    margin : 1rem ;
+    background-color: lightgrey;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    font-family: 'Oxygen', sans-serif;
+    box-shadow: 0 0 5px  grey ;
+}
+.skill_percent{
+    text-align: center ;
+    vertical-align: middle;
+    background-color: brown;
+    color  :white ;
+    height : 100% ;
+}
+
+/* footer and contact info  */
+
+footer{
+  background-image: linear-gradient(45deg , purple, red ) ;
+}
+
+.contact_wrap{
+    color :whitesmoke;
+    display: flex ;
+    justify-content: space-evenly ;
+    flex-wrap: wrap;
+    font-family: 'Oxygen',sans-serif;
+    padding-bottom: 5% ;
+}
+
+input{
+    padding : 6px ;
+    border:none ;
+}
+.contact_send{
+    font-size :1.2rem ;
+    background-color: ghostwhite;
+    color :darkmagenta;
+    border :none ;
+    border-radius: 10%;
+    vertical-align: middle;
+    transition :0.3s ;
+}
+.contact_send:hover{
+    background-color :firebrick ;
+    color :white ;
+}
+.contact_right{
+   align-self: center;
 }
