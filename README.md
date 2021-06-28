@@ -1,6 +1,6 @@
 # Resume_Page
 
-A simple resume page  [visit_here.](https://karthik-siru.github.io/Resume_Builder/index.html)<br>
+A simple resume page  [visit_here.](https://karthik-siru.github.io/Resume_Page/index.html)<br>
 
 ## highlights 
 
